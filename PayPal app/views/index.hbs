@@ -1,0 +1,12 @@
+<h1>Select a Product</h1>
+<div class="products">
+    {{#each products}}
+    <div class="product">
+        <h2>{{this.name}}</h2>
+        <p>Price: ${{this.price}}</p>
+        <a href="/checkout?productId={{this.id}}&productName={{encodeURIComponent this.name}}&productPrice={{this.price}}">
+            Buy Now
+        </a>
+    </div>
+    {{/each}}
+</div>

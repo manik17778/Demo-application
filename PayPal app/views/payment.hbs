@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <h1>Checkout</h1>
+    <h2>Product: {{productName}}</h2>
+    <p>Price: ${{productPrice}}</p>
+
+    <!-- PayPal Button Container -->
+    <div id="paypal-button-container"></div>
+
+    <!-- PayPal JS SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id={{paypalClientId}}&components=buttons"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
